@@ -15,7 +15,7 @@ def getCryptoChar(char):
     return char
     pass
 
-def decryption(messages):
+def decryption(message):
     newMessage = ""
     for messageIndex in range(0, len(message)):
         newMessage += getCryptoChar(message[messageIndex])
