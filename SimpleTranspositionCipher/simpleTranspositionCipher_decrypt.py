@@ -4,8 +4,8 @@ def decrypt(msg):
     temp_list = []
     d = {}
     while i < key_length:
-        temp_list.append(int(permutation[i]) - 1)
-        d[temp_list[i]] = msg[int(permutation[i]) - 1]
+        temp_list.append(int(transposition[i]) - 1)
+        d[temp_list[i]] = msg[int(transposition[i]) - 1]
         i += 1
     for key in d.values():
         temp += key
@@ -22,6 +22,6 @@ def slicer(message):
 print("Start!")
 message = input("Повідомлення: ")
 key_length = int(input("Введіть довжину ключа: "))
-permutation = input("Введіть ключ: ")
+transposition = input("Введіть ключ: ")
 print("Розшифроване повідомлення: ")
 print(slicer(message))
