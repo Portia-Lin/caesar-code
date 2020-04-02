@@ -1,7 +1,9 @@
 alph = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' ']
+frequency = [' ', 'E', 'T', 'A', 'O', 'I', 'N', 'S', 'H', 'R', 'D', 'L', 'C', 'U', 'M', 'W', 'F', 'G', 'Y', 'P', 'B', 'V', 'K', 'J', 'X', 'Q', 'Z']
 result = ""
 d = {}
 counter = 0
+variant = 0
 
 def get_key(d, value):
     for k, v in d.items():
@@ -26,17 +28,27 @@ for i in message:
     else:
         d[i] = 1
 
-print()
-print("Статистика: ")
+print("\nСтатистика: ")
 for key in sorted(d.keys()):
     print("Символ {} становить {:.1f}% тексту".format(key, 100 / counter * d[key]))
 
 letter = get_key(d, max(d.values()))
-for i in message:
-    result += decrypt(i, alph.index(letter) - alph.index(" "))
 print("В повідомленні символів: " + str(counter))
 print("Найбільш повторювана літера: " + str(letter))
-print("Крок зсуву: " + str(alph.index(letter) + 1))
-print()
-print("Розшифроване повідомлення: ")
+print("\nРозшифроване повідомлення: ")
+for i in message:
+    result += decrypt(i, alph.index(letter) - alph.index(frequency[variant]))
 print(result)
+success = input("Повідомлення розшифровано успішно? Введіть 'Y' або 'N': ")
+while success == "N":
+    if variant == len(frequency) - 1:
+        break
+    else:
+        result = ""
+        for i in message:
+            result += decrypt(i, alph.index(letter) - alph.index(frequency[variant + 1]))
+        variant += 1
+        print("\nРозшифроване повідомлення: ")
+        print(result)
+        success = input("Повідомлення розшифровано успішно? Введіть 'Y' або 'N': ")
+print("\nВи успішно, або ні розшифрувалиповідомлення")
