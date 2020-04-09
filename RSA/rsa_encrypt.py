@@ -21,6 +21,7 @@ result = ""
 s = input("Введіть повідомлення для шифрування: ")
 e = int(input("Введіть відкритий ключ e: "))
 n = int(input("Введіть модуль n: "))
+print("Зачекайте, йде процес шифрування повідомлення . . .")
 for i in s:
     result += encrypt_string(i)
 print("Зашифроване повідомлення: " + str(str2hex(result).decode('utf-8')))

@@ -21,6 +21,7 @@ result = ""
 s = (hex2str(input("Введіть повідомлення для розшифрування: ")).decode('utf-8'))
 d = int(input("Введіть закритий ключ d: "))
 n = int(input("Введіть модуль n: "))
+print("Зачекайте, йде процес розшифрування повідомлення . . .")
 for i in s:
     result += decrypt_string(str(i))
 print("Розшифроване повідомлення: " + result)
