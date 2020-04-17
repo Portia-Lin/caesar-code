@@ -19,7 +19,7 @@ Encrypt:
 
 Frequency analysis:
 
-![frequency analysis - short message](https://i.ibb.co/3WGkg4C/frequency-analysis-short-message.png)
+![frequency analysis - short message](http://i.piccy.info/i9/761041b41ca03a3fbff75bb2af79573e/1587081789/37396/1373347/frequency_analysis_short_message.png)
 # Polibius square cipher
 ### encryption
 ![polibius square encryption](https://i.ibb.co/2nByZ89/image.png)
@@ -32,7 +32,7 @@ Frequency analysis:
 ![simple transposition cipher decryption](https://i.ibb.co/mDNjRHd/simple-transposition-cipher-decrypt.png)
 # RSA algorithm
 ### generating keys
-![rsa generating keys](https://i.ibb.co/bsj4B0F/rsa-generating-keys.png)
+![rsa generating keys](http://i.piccy.info/i9/bff1df5365ec67c5f5859c002be13b92/1587081859/18946/1373347/rsa_generating_keys.png)
 ### encryption
 ![rsa encryption](https://i.ibb.co/5xYgJLc/rsa-encrypt.png)
 ### decryption
@@ -43,4 +43,4 @@ Frequency analysis:
 ### verification: authentic message
 ![authentic message](https://i.ibb.co/Hd90sfD/authentic.png)
 ### verification: non-authentic message
-![non-authentic message](https://i.ibb.co/wK9ng8K/non-authentic.png)
+![non-authentic message](http://i.piccy.info/i9/6368a10e9bf7618a2a515d6493692418/1587081902/18003/1373347/non_authentic.png)
